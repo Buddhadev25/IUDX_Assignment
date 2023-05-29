@@ -29,3 +29,11 @@ a) Refer docker docs and docker-compose docs
 b) Expose the web application in docker to outside world, so that it can be accessed through something like http://localhost:35622/xyz/
 ```
 ### Solution
+Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in the todo-list web interface and store the item in Postgres database. 
+
+#### steps:
+````
+1. Followed https://docs.docker.com/engine/install/ubuntu/ docs for Install Docker Engine
+2. Developed Assignment-2/docker-compose.yaml and  file #### steps:
+3. 
+````
