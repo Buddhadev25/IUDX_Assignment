@@ -81,7 +81,8 @@ When we don't want to store credentials in version control systems we use Kubern
 Also, an internal service is created so that other pods can communicate with mongo db pod. 
 4. mongo-configmap.yaml contain mongo db server details, mongodb-service is the service of mongo db.
 5. Mongo express is a frontend app that will access the mongo DB. To access DB, I configured DB url in pod template. 
-mongo username and password is referenced from the same mongodb-secret. The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
+mongo username and password is referenced from the same mongodb-secret. 
+The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
 6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application. Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. Target of 50% is the average CPU utilization
 that HPA needs to maintain alltime. 
 ````
