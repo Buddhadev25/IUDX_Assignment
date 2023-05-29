@@ -11,7 +11,7 @@ http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000
 
 #### steps:
   ```
-  1. https://github.com/Buddhadev25/IUDX_Assignment/blob/master/Assignment-1/main.py Flask API server developed, where http://127.0.0.1:5000/(route root) rendering [Weather.html](https://github.com/Buddhadev25/IUDX_Assignment/blob/master/Assignment-1/templates/Weather.html) file. 
+  1. https://github.com/Buddhadev25/IUDX_Assignment/blob/master/Assignment-1/main.py Flask API server developed, where http://127.0.0.1:5000/(route root) rendering Weather.html file. 
   2. When ENDPOINT sends Latitude, Longitude as input, weather function is taking these inputs and start processing through https://openweathermap.org/api and calculate current weather and location. 
   3. Then current weather and location details are passed to store function, this function will store these information in MYSQL database. 
   4. Created MYSQl database in my local server named webapi and table named weather
