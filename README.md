@@ -60,5 +60,17 @@ Screenshots are attached.
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/d1690a4c-1a0b-48ba-b668-6486b05c347e)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c0e6cc33-44c3-48a6-a467-2f0a6c38e504)
 
+## Assignment-2:
+Containerise and deploy the two components in local K8s minikube cluster (using kubectl only):
+```
+a) Please see the instructions on how to create a minikube on a local machine at
+https://github.com/datakaveri/iudx-deployment/tree/master/K8s-deployment/K8s-cluster/minikube .
+b) Add auto scaling to any one of the components - web server or database.
+c) Expose the web application in K8s to outside world, so that it can be
+accessed through something like http://localhost:35622/xyz/
+```
+### Solution
+Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in 
+the todo-list web interface and store the item in Postgres database. 
 
-
+#### Steps:
