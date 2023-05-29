@@ -85,8 +85,9 @@ mongo username and password is referenced from the same mongodb-secret.
 The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. 
 The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning 
 the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
-6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application. Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. Target of 50% is the average CPU utilization
-that HPA needs to maintain alltime. 
+6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application.
+Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. 
+Target of 50% is the average CPU utilization that HPA needs to maintain alltime. 
 ````
 Screenshots are attached. 
 
