@@ -22,3 +22,10 @@ http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5bc3db47-4c5d-4a17-9431-f122371406ba)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/4c93e0fb-93ae-4f70-a465-9f35b1e1bb2d)
 
+## Assignment-2:
+```
+Containerise and deploy the two components in local machine using docker-compose
+a) Refer docker docs and docker-compose docs
+b) Expose the web application in docker to outside world, so that it can be accessed through something like http://localhost:35622/xyz/
+```
+### Solution
