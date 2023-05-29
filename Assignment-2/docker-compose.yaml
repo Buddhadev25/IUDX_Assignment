@@ -1,0 +1,27 @@
+services:
+  todo-db:
+    image: postgres:11.5
+    restart: unless-stopped
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    volumes:
+      - /data/postgres:/var/lib/postgresql/data
+
+  todo-web:
+    image: diamol/ch06-todo-list
+    restart: unless-stopped
+    ports:
+      - "8050:80"
+    environment:
+      - Database:Provider=Postgres
+    depends_on:
+      - todo-db
+    secrets:
+      - source: postgres-connection
+        target: /app/config/secrets.json
+
+secrets:
+  postgres-connection:
+    file: postgres-connection.json
