@@ -54,13 +54,12 @@ Screenshots are attached.
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/e6790709-dbf6-43f9-a16f-f1877ec0185a)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b0283a09-c877-483b-bd4f-a3f32c647a05)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c3294f53-600d-4e7e-acc7-dcde7b131e87)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/e5e66270-121b-4a89-aa62-074788678d16)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c6736764-7dcf-4cbb-a7a7-490d0f2d1fc2)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b88bb470-1d9a-4c91-98ec-8ee2453f48c7)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/d1690a4c-1a0b-48ba-b668-6486b05c347e)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c0e6cc33-44c3-48a6-a467-2f0a6c38e504)
 
-## Assignment-2:
+## Assignment-3:
 ```
 Containerise and deploy the two components in local K8s minikube cluster (using kubectl only):
 a) Please see the instructions on how to create a minikube on a local machine at
