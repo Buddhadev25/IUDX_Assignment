@@ -20,6 +20,8 @@ API ENDPOINT and processing the coordinates using openweathermap and storing the
   information in MYSQL database. 
   4. Created MYSQl database in my local server named webapi and table named weather
 ```
+Screenshots are attached. 
+
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/74a21d48-af97-4bc3-ab2d-0fcb7250adb2)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/66fec199-31fd-4299-b2ca-0aaea535f0dc)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5ec303dd-b3df-431e-a8b2-5cb314958fc7)
@@ -47,7 +49,7 @@ postgres secrets file /app/config/secrets.json
 any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github.
 7. Used docker compose up command to run multi-container Docker application.
 ````
-Scrennshots are attached. 
+Screenshots are attached. 
 
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/e6790709-dbf6-43f9-a16f-f1877ec0185a)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b0283a09-c877-483b-bd4f-a3f32c647a05)
