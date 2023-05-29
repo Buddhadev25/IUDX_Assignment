@@ -1,11 +1,11 @@
 # IUDX_Assignment
 
 ## Assignment-1:
-Write a application/use your existing/easy to do projects from internet with following criteria:
 ```
+**Write a application/use your existing/easy to do projects from internet with following criteria:
 a. A basic HTTP web application in any language which takes some input through an API endpoint and process it and 
 store the data to db
-b. The database can be mysql, psql, mongodb etc.
+b. The database can be mysql, psql, mongodb etc.**
 ```
 ### Solution
 http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000/weather/{Latitude}/{Longitude} 
@@ -30,9 +30,9 @@ Screenshots are attached.
 
 ## Assignment-2:
 ```
-Containerise and deploy the two components in local machine using docker-compose
+**Containerise and deploy the two components in local machine using docker-compose
 a) Refer docker docs and docker-compose docs
-b) Expose the web application in docker to outside world, so that it can be accessed through something like http://localhost:35622/xyz/
+b) Expose the web application in docker to outside world, so that it can be accessed through something like http://localhost:35622/xyz/**
 ```
 ### Solution
 Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in 
@@ -61,13 +61,13 @@ Screenshots are attached.
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c0e6cc33-44c3-48a6-a467-2f0a6c38e504)
 
 ## Assignment-2:
-Containerise and deploy the two components in local K8s minikube cluster (using kubectl only):
 ```
+**Containerise and deploy the two components in local K8s minikube cluster (using kubectl only):
 a) Please see the instructions on how to create a minikube on a local machine at
 https://github.com/datakaveri/iudx-deployment/tree/master/K8s-deployment/K8s-cluster/minikube .
 b) Add auto scaling to any one of the components - web server or database.
 c) Expose the web application in K8s to outside world, so that it can be
-accessed through something like http://localhost:35622/xyz/
+accessed through something like http://localhost:35622/xyz/**
 ```
 ### Solution
 Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in 
