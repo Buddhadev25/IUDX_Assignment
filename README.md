@@ -3,17 +3,21 @@
 ## Assignment-1:
 Write a application/use your existing/easy to do projects from internet with following criteria:
 ```
-a. A basic HTTP web application in any language which takes some input through an API endpoint and process it and store the data to db
+a. A basic HTTP web application in any language which takes some input through an API endpoint and process it and 
+store the data to db
 b. The database can be mysql, psql, mongodb etc.
 ```
 ### Solution
-http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000/weather/{Latitude}/{Longitude} API ENDPOINT and processing the coordinates using openweathermap and storing the location and current weather to MYSQL database. 
+http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000/weather/{Latitude}/{Longitude} 
+API ENDPOINT and processing the coordinates using openweathermap and storing the location and current weather to MYSQL database. 
 
 #### steps:
   ```
   1. https://github.com/Buddhadev25/IUDX_Assignment/blob/master/Assignment-1/main.py Flask API server developed, where http://127.0.0.1:5000/(route root) rendering Weather.html file. 
-  2. When ENDPOINT sends Latitude, Longitude as input, weather function is taking these inputs and start processing through https://openweathermap.org/api and calculate current weather and location. 
-  3. Then current weather and location details are passed to store function, this function will store these information in MYSQL database. 
+  2. When ENDPOINT sends Latitude, Longitude as input, weather function is taking these inputs and start processing 
+  through https://openweathermap.org/api and calculate current weather and location. 
+  3. Then current weather and location details are passed to store function, this function will store these 
+  information in MYSQL database. 
   4. Created MYSQl database in my local server named webapi and table named weather
 ```
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/74a21d48-af97-4bc3-ab2d-0fcb7250adb2)
@@ -29,15 +33,18 @@ a) Refer docker docs and docker-compose docs
 b) Expose the web application in docker to outside world, so that it can be accessed through something like http://localhost:35622/xyz/
 ```
 ### Solution
-Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in the todo-list web interface and store the item in Postgres database. 
+Here I am containerizing Postgres and todo-list components using docker-compose. The aim is to add New Item in 
+the todo-list web interface and store the item in Postgres database. 
 
 #### Steps:
 ````
 1. Followed https://docs.docker.com/engine/install/ubuntu/ docs for Install Docker Engine
 2. Developed Assignment-2/docker-compose.yaml and postgres-connection.json file
 3. I am using postgres 11.5 docker image, and exposing 5433 port, and using volume /data/postgress for data persistance purpose. 
-5. todo-list container exposed on 8050 port, and connecting the database using environment variables and postgres secrets file /app/config/secrets.json
-6. Sending postgres database secrets as a file named postgress-connection.json, this can help to manage any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github.
+5. todo-list container exposed on 8050 port, and connecting the database using environment variables and 
+postgres secrets file /app/config/secrets.json
+6. Sending postgres database secrets as a file named postgress-connection.json, this can help to manage 
+any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github.
 7. Used docker compose up command to run multi-container Docker application.
 ````
 Scrennshots are attached. 
