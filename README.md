@@ -70,7 +70,7 @@ c) Expose the web application in K8s to outside world, so that it can be
 accessed through something like http://localhost:35622/xyz/
 ```
 ### Solution
-
+I am containerizing and deploying mongo and mongo-express web admin interfaces in local K8s minikube cluster. Adding data in mongo-express and the data is stored in mongo database. 
 
 #### Steps:
 
