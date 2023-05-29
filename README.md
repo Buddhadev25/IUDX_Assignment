@@ -34,6 +34,12 @@ Here I am containerizing Postgres and todo-list components using docker-compose.
 #### steps:
 ````
 1. Followed https://docs.docker.com/engine/install/ubuntu/ docs for Install Docker Engine
-2. Developed Assignment-2/docker-compose.yaml and  file #### steps:
-3. 
+2. Developed Assignment-2/docker-compose.yaml and postgres-connection.json file
+3. I am using postgres 11.5 docker image, and exposing 5433 port, and using volume /data/postgress for data persistance purpose. 
+5. todo-list container exposed on 8050 port, and connecting the database using environment variables and postgres secrets file /app/config/secrets.json
+6. Sending postgres database secrets as a file named postgress-connection.json, this can help to manage any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github.
+7. Used docker compose up command to run multi-container Docker application.
 ````
+Scrennshots are attached. 
+
+
