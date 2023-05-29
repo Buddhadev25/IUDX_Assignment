@@ -84,4 +84,5 @@ accessed through something like http://localhost:35622/xyz/
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b4677c3f-e985-4752-8215-0ba6b807e276)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5270d5db-aa49-4612-b00d-7d83e7c2c395)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c4297850-f259-4289-8a1a-dadb6a1a8d32)
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/f15510e6-a075-40af-815f-59bd5812f137)
 
