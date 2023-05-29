@@ -75,11 +75,15 @@ I am containerizing and deploying mongo database and mongo-express web admin int
 #### Steps:
 ```
 1. Followed https://minikube.sigs.k8s.io/docs/start/ docs for local Kubernetes cluster(minikube) installation
-2. mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. When we don't want to store credentials in version control systems we use Kubernetes secrets file.  
-3. mongo.yaml is type deployment and mongo db username, and password is referenced from mongodb-secret. Also, an internal service is created so that other pods can communicate with mongo db pod. 
+2. mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. 
+When we don't want to store credentials in version control systems we use Kubernetes secrets file.  
+3. mongo.yaml is type deployment and mongo db username, and password is referenced from mongodb-secret. 
+Also, an internal service is created so that other pods can communicate with mongo db pod. 
 4. mongo-configmap.yaml contain mongo db server details, mongodb-service is the service of mongo db.
-5. Mongo express is a frontend app that will access the mongo DB. To access DB, I configured DB url in pod template. mongo username and password is referenced from the same mongodb-secret. The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
-6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application. Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. Target of 50% is the average CPU utilization that HPA needs to maintain alltime. 
+5. Mongo express is a frontend app that will access the mongo DB. To access DB, I configured DB url in pod template. 
+mongo username and password is referenced from the same mongodb-secret. The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
+6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application. Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. Target of 50% is the average CPU utilization
+that HPA needs to maintain alltime. 
 ````
 Screenshots are attached. 
 
