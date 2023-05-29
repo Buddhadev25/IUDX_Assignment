@@ -16,5 +16,9 @@ http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000
   3. Then current weather and location details are passed to store function, this function will store these information in MYSQL database. 
   4. Created MYSQl database in my local server named webapi and table named weather
 ```
-  
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/74a21d48-af97-4bc3-ab2d-0fcb7250adb2)
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/fb5d4720-73bc-4e36-9bfa-f1e7de8cf23a)
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5ec303dd-b3df-431e-a8b2-5cb314958fc7)
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5bc3db47-4c5d-4a17-9431-f122371406ba)
+![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/4c93e0fb-93ae-4f70-a465-9f35b1e1bb2d)
 
