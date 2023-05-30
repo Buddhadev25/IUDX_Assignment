@@ -22,7 +22,12 @@ API ENDPOINT and processing the coordinates using openweathermap and storing the
 Screenshots are attached. 
 
 <p align="center">
-<img src="./Screenshot/Assignment-1/1.png">
+  <img src="./Screenshot/Assignment-1/1.png">
+  <img src="./Screenshot/Assignment-1/2.png">
+  <img src="./Screenshot/Assignment-1/3.png">
+  <img src="./Screenshot/Assignment-1/4.png">
+  <img src="./Screenshot/Assignment-1/5.png">
+  <img src="./Screenshot/Assignment-1/6.png">
 </p>
 
 ## Assignment-2:
@@ -48,14 +53,16 @@ any sensitive data and when we dont wants to store credentials in version contro
 
 Screenshots are attached. 
 
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/e6790709-dbf6-43f9-a16f-f1877ec0185a)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b0283a09-c877-483b-bd4f-a3f32c647a05)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c3294f53-600d-4e7e-acc7-dcde7b131e87)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/6460b873-d193-4196-826f-6f043ad6b621)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c6736764-7dcf-4cbb-a7a7-490d0f2d1fc2)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b88bb470-1d9a-4c91-98ec-8ee2453f48c7)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/d1690a4c-1a0b-48ba-b668-6486b05c347e)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c0e6cc33-44c3-48a6-a467-2f0a6c38e504)
+<p align="center">
+  <img src="./Screenshot/Assignment-2/1.png">
+  <img src="./Screenshot/Assignment-2/2.png">
+  <img src="./Screenshot/Assignment-2/3.png">
+  <img src="./Screenshot/Assignment-2/4.png">
+  <img src="./Screenshot/Assignment-2/5.png">
+  <img src="./Screenshot/Assignment-2/6.png">
+  <img src="./Screenshot/Assignment-2/7.png">
+  <img src="./Screenshot/Assignment-2/8.png">
+</p>
 
 ## Assignment-3:
 ```
@@ -86,11 +93,13 @@ the service with an external IP address. 30000 Nodeport is exposed, so that we c
 
 Screenshots are attached. 
 
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/00538491-d067-447f-9ec4-a85a1ad280cd)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/29dba80b-fb64-453a-925e-51062045924a)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/b4677c3f-e985-4752-8215-0ba6b807e276)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/c4297850-f259-4289-8a1a-dadb6a1a8d32)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/53589365-cfd7-40c4-87ea-a8adbd5b0520)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/f4f302f7-af3c-4a94-a1de-97a07d032157)
+<p align="center">
+  <img src="./Screenshot/Assignment-3/1.png">
+  <img src="./Screenshot/Assignment-3/2.png">
+  <img src="./Screenshot/Assignment-3/3.png">
+  <img src="./Screenshot/Assignment-3/4.png">
+  <img src="./Screenshot/Assignment-3/5.png">
+  <img src="./Screenshot/Assignment-3/6.png">
+</p>
 
 > Since Metrics Server is installed on cluster, current CPU utilization is unknown by kubernetes. 
