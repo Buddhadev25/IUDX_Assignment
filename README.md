@@ -44,8 +44,8 @@ the todo-list web interface and store the item in Postgres database.
 - I am using postgres 11.5 docker image, and exposing 5433 port, and using volume /data/postgress for data persistance purpose. 
 - todo-list container exposed on 8050 port, and connecting the database using environment variables and 
 postgres secrets file /app/config/secrets.json
-- *** Sending postgres database secrets as a file named postgress-connection.json, this can help to manage 
-any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github. ***
+- **Sending postgres database secrets as a file named postgress-connection.json, this can help to manage 
+any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github. **
 - Used docker compose up command to run multi-container Docker application.
 
 Screenshots are attached. 
