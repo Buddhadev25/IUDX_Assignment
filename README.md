@@ -102,4 +102,4 @@ Screenshots are attached.
   <img src="./Screenshot/Assignment-3/6.png">
 </p>
 
-> Since Metrics Server is installed on cluster, current CPU utilization is unknown by kubernetes. 
+> Since Metrics Server is not installed on cluster, current CPU utilization is unknown by kubernetes. 
