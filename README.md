@@ -21,13 +21,9 @@ API ENDPOINT and processing the coordinates using openweathermap and storing the
 
 Screenshots are attached. 
 
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/74a21d48-af97-4bc3-ab2d-0fcb7250adb2)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/66fec199-31fd-4299-b2ca-0aaea535f0dc)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5ec303dd-b3df-431e-a8b2-5cb314958fc7)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/168af767-8ea3-4381-b5cf-cd241c45a113)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/5bc3db47-4c5d-4a17-9431-f122371406ba)
-![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/3b10defc-7217-4e26-a7c8-57e78be18668)
-
+<p align="center">
+<img src="./docs/deployment_overview.png">
+</p>
 
 ## Assignment-2:
 ```
