@@ -33,7 +33,7 @@ def store(weather,Location):
     l=Location
     print(w+l)
     sql = """INSERT INTO weather(Location, Weather) VALUES (%s, %s)"""
-    val=(w,l)
+    val=(l,w)
     try:
         # Executing the SQL command
         cursor.execute(sql,val)
