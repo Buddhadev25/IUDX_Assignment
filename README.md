@@ -5,7 +5,7 @@
 Write a application/use your existing/easy to do projects from internet with following criteria:
 a. A basic HTTP web application in any language which takes some input through an API endpoint and process it and 
 store the data to db
-b. The database can be mysql, psql, mongodb etc.
+b. The database can be mysql, psql, mongodb etc. 
 ```
 ### Solution
 http://127.0.0.1:5000/ web application takes input through http://127.0.0.1:5000/weather/{Latitude}/{Longitude} 
