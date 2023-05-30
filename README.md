@@ -38,16 +38,16 @@ Here I am containerizing Postgres and todo-list components using docker-compose.
 the todo-list web interface and store the item in Postgres database. 
 
 #### Steps:
-````
-1. Followed https://docs.docker.com/engine/install/ubuntu/ docs for Install Docker Engine
-2. Developed Assignment-2/docker-compose.yaml and postgres-connection.json file
-3. I am using postgres 11.5 docker image, and exposing 5433 port, and using volume /data/postgress for data persistance purpose. 
-5. todo-list container exposed on 8050 port, and connecting the database using environment variables and 
+
+- Followed https://docs.docker.com/engine/install/ubuntu/ docs for Install Docker Engine
+- Developed Assignment-2/docker-compose.yaml and postgres-connection.json file
+- I am using postgres 11.5 docker image, and exposing 5433 port, and using volume /data/postgress for data persistance purpose. 
+- todo-list container exposed on 8050 port, and connecting the database using environment variables and 
 postgres secrets file /app/config/secrets.json
-6. *** Sending postgres database secrets as a file named postgress-connection.json, this can help to manage 
+- *** Sending postgres database secrets as a file named postgress-connection.json, this can help to manage 
 any sensitive data and when we dont wants to store credentials in version control systems like Gitlab or Github. ***
-7. Used docker compose up command to run multi-container Docker application.
-````
+- Used docker compose up command to run multi-container Docker application.
+
 Screenshots are attached. 
 
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/e6790709-dbf6-43f9-a16f-f1877ec0185a)
@@ -72,22 +72,20 @@ accessed through something like http://localhost:35622/xyz/
 I am containerizing and deploying mongo database and mongo-express web admin interfaces in local K8s minikube cluster. Adding data in mongo-express and the data is stored in mongo database. 
 
 #### Steps:
-```
-1. Followed https://minikube.sigs.k8s.io/docs/start/ docs for local Kubernetes cluster(minikube) installation
-2. mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. 
+
+- Followed https://minikube.sigs.k8s.io/docs/start/ docs for local Kubernetes cluster(minikube) installation
+- mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. 
 When we don't want to store credentials in version control systems we use Kubernetes secrets file.  
-3. mongo.yaml is type deployment and mongo db username, and password is referenced from mongodb-secret. 
+- mongo.yaml is type deployment and mongo db username, and password is referenced from mongodb-secret. 
 Also, an internal service is created so that other pods can communicate with mongo db pod. 
-4. mongo-configmap.yaml contain mongo db server details, mongodb-service is the service of mongo db.
-5. Mongo express is a frontend app that will access the mongo DB. To access DB, I configured DB url in pod template. 
+- mongo-configmap.yaml contain mongo db server details, mongodb-service is the service of mongo db.
+- Mongo express is a frontend app that will access the mongo DB. To access DB, I configured DB url in pod template. 
 mongo username and password is referenced from the same mongodb-secret. 
 The value of ME_CONFIG_MONGODB_SERVER is referenced from mongodb-configmap. 
 The type of this service is LoadBalancer and LoadBalancer accepts external requests by assigning 
 the service with an external IP address. 30000 Nodeport is exposed, so that we can access the service from the browser.  
-6. Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application.
-Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. 
-Target of 50% is the average CPU utilization that HPA needs to maintain alltime. 
-````
+- Implemented Horizontal Pod Autoscaler(HPA) for adjusts the number of replicas of mongo-express application. Here HPA maintains between 2 and 10 replicas of the pods controled by HPA. Target of 50% is the average CPU utilization that HPA needs to maintain alltime. 
+
 Screenshots are attached. 
 
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/00538491-d067-447f-9ec4-a85a1ad280cd)
