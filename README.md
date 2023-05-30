@@ -98,3 +98,4 @@ Screenshots are attached.
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/53589365-cfd7-40c4-87ea-a8adbd5b0520)
 ![image](https://github.com/Buddhadev25/IUDX_Assignment/assets/104052706/f4f302f7-af3c-4a94-a1de-97a07d032157)
 
+> Since Metrics Server is installed on cluster, current CPU utilization is not unknown by kubernetes. 
