@@ -22,7 +22,7 @@ API ENDPOINT and processing the coordinates using openweathermap and storing the
 Screenshots are attached. 
 
 <p align="center">
-<img src="./docs/deployment_overview.png">
+<img src="./Screenshot/Assignment-1/1.png">
 </p>
 
 ## Assignment-2:
