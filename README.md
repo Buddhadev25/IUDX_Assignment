@@ -74,8 +74,8 @@ I am containerizing and deploying mongo database and mongo-express web admin int
 #### Steps:
 
 - Followed https://minikube.sigs.k8s.io/docs/start/ docs for local Kubernetes cluster(minikube) installation
-- mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. 
-When we don't want to store credentials in version control systems we use Kubernetes secrets file.  
+- **mongo-secret.yaml file contains the environments of mongo db. username and password are in base64. 
+When we don't want to store credentials in version control systems we use Kubernetes secrets file.**
 - mongo.yaml is type deployment and mongo db username, and password is referenced from mongodb-secret. 
 Also, an internal service is created so that other pods can communicate with mongo db pod. 
 - mongo-configmap.yaml contain mongo db server details, mongodb-service is the service of mongo db.
